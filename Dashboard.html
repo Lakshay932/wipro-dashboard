@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style_dashboard.css">
+</head>
+<body>
+<div class="sidebar">
+    <div class="logo">
+        <img src="images/Logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="manager_dashboard.html">Manager Section</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="main-content">
+    <div class="header-info">
+        <span>Employee name: <span id="headerName"></span></span>
+        <span>ID: <span id="headerID"></span></span>
+    </div>
+    <div class="table-section">
+        <table id="myComplaintsTable"></table>
+    </div>
+
+    <div class="rag-legend">
+        <span class="green"></span>Excellent
+        <span class="amber"></span>Good
+        <span class="red"></span>Need Improvement
+    </div>
+</div>
+<!-- IMPORTANT: You must include the dashboard JS here for heading info -->
+<script src="js/script_dashboard.js"></script>
+<script src="js/storage.js"></script>
+</body>
+</html>
