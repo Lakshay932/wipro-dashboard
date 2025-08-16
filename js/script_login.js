@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded", function(){
             if (validUser) {
                 localStorage.setItem("loggedIn", "true");
                 localStorage.setItem("loggedInUser", JSON.stringify(validUser));
-                window.location.href = "dashboard.html";
+                window.location.href = "index.html";
+
             } else {
                 errorMsg.textContent = "Invalid Company Code or Password";
                 errorMsg.style.color = "red";
